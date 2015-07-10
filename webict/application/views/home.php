@@ -64,7 +64,7 @@ hr
               {blog_entries}
                   <li>
                    <div class="post-content"><h6>
-                     <a  href="<?php echo base_url('index.php/Findall/findnew/{idnew}');?>" class="mtitle">{contennew}</a></h6>
+                     <a  href="<?php echo base_url('index.php/Findall/findnew?id={idnew}');?>" class="mtitle">{contennew}</a></h6>
                       <div class="post-meta"><span><a class="glyphicon glyphicon-calendar"></a>{datenew}</span>
                         </div>
                       </div>

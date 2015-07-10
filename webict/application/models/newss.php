@@ -60,7 +60,7 @@ public function getDatenew()
     ('
       SELECT *
       FROM webncu
-      WHERE idnew
+       WHERE idnew = "'. $idnew .'"
     ');
 
   return $query->result();

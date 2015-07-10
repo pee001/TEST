@@ -63,7 +63,9 @@ hr
             <p class="breadcrumb"><a href="home.php">หน้าแรก</a>  ข่าวสาร  </p>
         </div>
         {feetnew}
-              <h5>{contennew} </h5>{/blog_entries}
+              <h5>{contennew} </h5>
+
+              {/blog_entries}
                 </div>
                   </div>
 

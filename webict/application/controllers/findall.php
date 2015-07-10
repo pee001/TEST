@@ -23,12 +23,13 @@ class Findall extends CI_Controller
   }
   function findnew()
   {
+    $idnew=$_GET['id'];
     $this->load->library('parser');
     $this->load->helper('url');
     $this->load->model('Newss');
     $data['blog_heading']='ข่าวสาร';
-    $data['blog_entries']=$this->Newss->findByPk($this->a->get('idnew'));
-    $this->parser->parse_single('new', $data);
+    $data['blog_entries']= $this->Newss->findByPk($idnew);
+    $this->parser->parse('new', $data);
   }
 }
 
