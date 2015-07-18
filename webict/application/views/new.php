@@ -55,22 +55,24 @@ hr
       </nav>
       <hr>
 <!---แสดงข่าว--->
-      <div class="row">
-        <div class="col-lg-9 ">
-            <ul class="popular-news" style="margin-top:5px;">
-                <div class="section page-heading animate-onscroll">{blog_entries}
+    <div class="row">
+      <div class="col-lg-9 ">
+      <ul class="popular-news" style="margin-top:5px;">
 
-            <p class="breadcrumb"><a href="home.php">หน้าแรก</a>  ข่าวสาร  </p>
-        </div>
-        {feetnew}
-              <h5>{contennew} </h5>
+      <div class="section page-heading animate-onscroll">
+      <p class="breadcrumb"><a href="home.php">หน้าแรก</a>  {blog_heading}  </p>
+      </div>
+      {blog_entries}
+      {feetnew}
+      <h2>{contennew} </h2>
+      <img src="<?php echo base_url('{file}');?>"width="200px" height="200px" >
+      {/blog_entries}
+       </ul>
+      </div>
+    </div>
 
-              {/blog_entries}
-                </div>
-                  </div>
-
-              <div class="footer">
-              </div>
+    <div class="footer">
+    </div>
 </body>
 
 </html>

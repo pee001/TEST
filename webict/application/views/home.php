@@ -37,6 +37,7 @@ hr
 {
   margin: auto;
 }
+
 </style>
 <body>
       <div class="text-muted nava ">
@@ -56,22 +57,25 @@ hr
       </nav>
 
 
-      <hr>
+
 <!---แสดงข่าว--->
-      <div class="row">
-        <div class="col-lg-9 ">
-            <ul class="breadcrumb" >
-              {blog_entries}
-                  <li>
-                   <div class="post-content"><h6>
-                     <a  href="<?php echo base_url('index.php/Findall/findnew?id={idnew}');?>" class="mtitle">{contennew}</a></h6>
-                      <div class="post-meta"><span><a class="glyphicon glyphicon-calendar"></a>{datenew}</span>
-                        </div>
-                      </div>
-                  </li>{/blog_entries}
-                </ul>
-                </div>
-              </div>
+    <div class="row">
+      {blog_entries}
+      <div class="col-lg-12 img ">
+          <ul class="breadcrumb " >
+
+              <img src="<?php echo base_url('{file}');?>"width="200px" height="200px" ><h6>
+              <a  href="<?php echo base_url('index.php/Findall/findnew?id={idnew}');?>" class="mtitle">{feetnew}</a></h6>
+            <div
+              class="post-meta"><span><a class="glyphicon glyphicon-calendar"></a>{datenew}</span>
+            </div>
+
+          </ul>
+      </div>
+      {/blog_entries}
+
+    </div>
+
 
               <div class="footer">
 
